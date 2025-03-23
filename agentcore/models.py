@@ -15,4 +15,4 @@ class V1UserProfile(BaseModel):
     created: Optional[int] = None
     updated: Optional[int] = None
     token: Optional[str] = None
-    entitlements: Optional[List[Dict[str, Any]]]
+    entitlements: Optional[List[Dict[str, Any]]] = None
