@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from typing import Dict, Optional, List, Any
 
 from pydantic import BaseModel
 
@@ -15,3 +15,4 @@ class V1UserProfile(BaseModel):
     created: Optional[int] = None
     updated: Optional[int] = None
     token: Optional[str] = None
+    entitlements: Optional[List[Dict[str, Any]]]
