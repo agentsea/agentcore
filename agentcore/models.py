@@ -9,6 +9,8 @@ class V1UserProfile(BaseModel):
     handle: Optional[str] = None
     picture: Optional[str] = None
     organization: Optional[str] = None
+    subscription: Optional[str] = None
+    external_id: Optional[str] = None
     role: Optional[str] = None
     actor: Optional[str] = None
     organizations: Optional[Dict[str, Dict[str, str]]] = None
